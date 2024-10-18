@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primaria angel</title>
+    <link rel="stylesheet" href="{% static 'estilos.css' %}">
+</head>
+<body>
+    <h1>Desde template</h1>
+    <hr>
+    <ul>
+        {% for i in misalumnos %}
+        <li> {{i.nombre}}</li>
+
+        {% endfor %}
+    </ul>
+    <script src="{% static "script.js" %}"></script>
+    <p></p>
+    
+</body>
+</html>
